@@ -347,12 +347,12 @@ function ab_shortcode() {
 function ab_css() {
 	return '
 @font-face{font-family:"Vayentha-sans";src:url("' . esc_url( content_url( 'uploads/2025/04/Vayentha-Sans.otf' ) ) . '") format("opentype");font-display:swap}
-.ab-speisekarte{max-width:760px;margin:0 auto;text-align:center;line-height:1.55}
-.ab-speisekarte section{margin-bottom:72px}
-.ab-speisekarte h2{font-family:"Vayentha-sans","Source Sans Pro",sans-serif;color:var(--e-global-color-primary,#6E0D1B);font-size:40px;font-weight:400;letter-spacing:1px;text-transform:uppercase;margin:0 0 28px}
+.ab-speisekarte{max-width:760px;margin:56px auto 0;text-align:center;line-height:1.55;font-family:"Source Sans Pro",sans-serif;font-size:17px;color:var(--e-global-color-text,#5C5C5C)}
+.ab-speisekarte section{margin:0 0 72px}
+.ab-speisekarte h2{font-family:"Vayentha-sans","Source Sans Pro",sans-serif;color:var(--e-global-color-primary,#6E0D1B);font-size:40px;font-weight:400;line-height:1.2;letter-spacing:1px;text-transform:uppercase;margin:0 0 28px}
 .ab-speisekarte .ab-gericht{margin:0 0 26px}
-.ab-speisekarte h3{font-family:"Source Sans Pro",sans-serif;color:var(--e-global-color-text,#5C5C5C);font-size:18px;font-weight:400;letter-spacing:0;text-transform:none;margin:0}
-.ab-speisekarte p{margin:0;font-weight:300}
+.ab-speisekarte h3{font-family:inherit;color:inherit;font-size:18px;font-weight:400;line-height:1.55;letter-spacing:0;text-transform:none;margin:0}
+.ab-speisekarte p{font-family:inherit;color:inherit;font-size:inherit;font-weight:300;line-height:inherit;margin:0}
 .ab-speisekarte .ab-menupreis{margin-top:8px}
 @media(max-width:767px){.ab-speisekarte h2{font-size:32px}}';
 }
