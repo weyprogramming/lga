@@ -1,0 +1,42 @@
+<!--
+  Structured data (schema.org JSON-LD) for the landgasthaus-albermann.de homepage <head>.
+  Before using: replace the sameAs placeholders with the real Facebook/Instagram URLs,
+  confirm priceRange (a guess), and optionally add geo coordinates.
+  Validate with https://search.google.com/test/rich-results
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://landgasthaus-albermann.de/#restaurant",
+  "name": "Landgasthaus Albermann",
+  "url": "https://landgasthaus-albermann.de/",
+  "telephone": "+49 5242 34642",
+  "email": "info@landgasthaus-albermann.de",
+  "image": "https://landgasthaus-albermann.de/wp-content/uploads/2025/04/Landgasthaus-Albermann-133-scaled-e1749602277783-1024x1024.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Beckumer Straße 22",
+    "postalCode": "33378",
+    "addressLocality": "Rheda-Wiedenbrück",
+    "addressCountry": "DE"
+  },
+  "servesCuisine": ["Westfälisch", "Regional", "Saisonal"],
+  "priceRange": "€€",
+  "acceptsReservations": true,
+  "hasMenu": "https://landgasthaus-albermann.de/abendkarte/",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "17:30", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday", "opens": "11:30", "closes": "14:00" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday", "opens": "17:30", "closes": "22:00" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/…",
+    "https://www.instagram.com/…"
+  ]
+}
+</script>
