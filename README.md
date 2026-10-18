@@ -2,7 +2,9 @@
 
 Hallo! Hier ist alles gesammelt, damit eure Website bei Google besser gefunden wird – vor allem bei Suchen wie „Restaurant Rheda-Wiedenbrück“ oder „westfälische Küche in der Nähe“.
 
-**Kurz gesagt:** Die Website ist technisch in Ordnung. Es fehlen aber ein paar Dinge, auf die Google bei Restaurants besonders achtet. Die Schritte unten sind nach Wirkung sortiert – die ersten drei bringen am meisten und brauchen keine Technik.
+**Kurz gesagt:** Die Website ist technisch in Ordnung. Es fehlen aber ein paar Dinge, auf die Google bei Restaurants besonders achtet.
+
+Die Schritte 1 und 2 erklären, was du mit den Dateien in diesem Ordner machst. Danach folgen Schritte ganz ohne Dateien – Schritt 3 (Google-Unternehmensprofil) bringt davon am meisten.
 
 Du brauchst dafür nur einen Browser, den Zugang zum WordPress-Backend und ein Google-Konto.
 
@@ -12,8 +14,8 @@ Du brauchst dafür nur einen Browser, den Zugang zum WordPress-Backend und ein G
 
 | Datei | Wofür |
 |---|---|
-| `albermann-speisekarte.zip` | Ein kleines WordPress-Plugin: Damit pflegst du die Abendkarte direkt in WordPress, statt nur ein PDF hochzuladen (Schritt 4). |
-| `structured-data.html` | Ein Textbaustein, der Google Adresse, Telefon und Öffnungszeiten in maschinenlesbarer Form mitteilt (Schritt 5). |
+| `albermann-speisekarte.zip` | Ein kleines WordPress-Plugin: Damit pflegst du die Abendkarte direkt in WordPress, statt nur ein PDF hochzuladen (Schritt 1). |
+| `structured-data.html` | Ein Textbaustein, der Google Adresse, Telefon und Öffnungszeiten in maschinenlesbarer Form mitteilt (Schritt 2). |
 | `menu.html` | Eine Vorschau, wie die Karte als Webseite aussieht. Zum Anschauen im Browser doppelklicken. Hieraus kannst du auch den Text der Allergikerhinweise kopieren. |
 | `wordpress/` | Der Inhalt des Plugins zum Nachschauen. Für dich nicht wichtig. |
 
@@ -21,47 +23,7 @@ Du brauchst dafür nur einen Browser, den Zugang zum WordPress-Backend und ein G
 
 ---
 
-## Schritt 1: Google-Unternehmensprofil pflegen ⭐ wichtigster Schritt
-
-Das ist der Eintrag, der bei Google Maps und rechts neben den Suchergebnissen erscheint. Für Restaurants zählt er mehr als die Website selbst.
-
-1. Öffne [business.google.com](https://business.google.com) und melde dich mit eurem Google-Konto an.
-2. Falls das Landgasthaus noch nicht „beansprucht“ ist: Eintrag suchen und auf „Inhaber bestätigen“ klicken. Google schickt meist eine Postkarte mit Code oder ruft an.
-3. Fülle alles aus:
-   - Öffnungszeiten (genau wie auf der Website), auch Feiertage und Ruhetage
-   - Kategorie „Restaurant“, dazu z. B. „Deutsches Restaurant“ und „Hotel“
-   - Link zur Website und zur Speisekarte (`https://landgasthaus-albermann.de/abendkarte/`)
-   - Möglichst viele gute Fotos: Gastraum, Terrasse, Gerichte, Außenansicht
-4. Beantworte Bewertungen – auch die guten, ein kurzes „Danke“ reicht.
-
-## Schritt 2: Gäste um Google-Bewertungen bitten
-
-Anzahl und Aktualität der Bewertungen beeinflussen stark, wer bei Google Maps oben steht.
-
-- Im Unternehmensprofil gibt es unter „Mehr Rezensionen erhalten“ einen Link bzw. QR-Code.
-- Den QR-Code z. B. auf die Rechnung, einen Tischaufsteller oder die Karte drucken.
-- Zufriedene Stammgäste einfach direkt fragen.
-
-## Schritt 3: Öffnungszeiten überall gleich halten
-
-Google vergleicht eure Angaben auf verschiedenen Seiten. Widersprüche kosten Vertrauen und Platzierungen.
-
-Gerade aufgefallen: Auf eurer Kontaktseite steht **Mi–Sa**, auf [dein-nrw.de](https://entdecke.dein-nrw.de/en/dein-nrw/streaming/detail/Gastro/g_100021428/landgasthaus-albermann) steht **Di–Sa** (und „zweite Generation“ statt „dritte“).
-
-Prüfe und korrigiere Name, Adresse, Telefonnummer und Öffnungszeiten auf:
-
-- [ ] Google-Unternehmensprofil
-- [ ] eurer Website (Kontaktseite, Fußzeile)
-- [ ] dein-nrw.de
-- [ ] 11880.com
-- [ ] Tripadvisor
-- [ ] Facebook und Instagram
-
-**Merke:** Wenn sich die Öffnungszeiten ändern, an all diesen Stellen ändern – und in Schritt 5.
-
----
-
-## Schritt 4: Speisekarte als echte Webseite
+## Schritt 1: Speisekarten-Plugin installieren (`albermann-speisekarte.zip`)
 
 Bisher gibt es die Abendkarte nur als PDF. Google kann darin schlecht lesen. Als normaler Text auf einer Seite findet man euch dann auch bei Suchen wie „Wildragout Rheda-Wiedenbrück“.
 
@@ -116,9 +78,11 @@ Google erhält die Karte automatisch in maschinenlesbarer Form mit – darum mus
 
 ---
 
-## Schritt 5: Adresse und Öffnungszeiten für Google hinterlegen
+## Schritt 2: Restaurant-Daten für Google einbauen (`structured-data.html`)
 
 Die Datei `structured-data.html` enthält einen unsichtbaren Baustein, der Google genau sagt: Das ist ein Restaurant, hier ist die Adresse, das sind die Öffnungszeiten, hier ist die Karte.
+
+Besucher sehen davon nichts – die Seite sieht danach genauso aus wie vorher. Google liest den Baustein aber und muss nicht mehr raten, was ihr seid und wann ihr geöffnet habt. Fachbegriff dafür: „strukturierte Daten“.
 
 ### Vorher anpassen
 
@@ -145,6 +109,50 @@ Die Datei `structured-data.html` enthält einen unsichtbaren Baustein, der Googl
 
 ---
 
+## Schritt 3: Google-Unternehmensprofil pflegen ⭐ wichtigster Schritt
+
+Das ist der Eintrag, der bei Google Maps und rechts neben den Suchergebnissen erscheint. Für Restaurants zählt er mehr als die Website selbst.
+
+1. Öffne [business.google.com](https://business.google.com) und melde dich mit eurem Google-Konto an.
+2. Falls das Landgasthaus noch nicht „beansprucht“ ist: Eintrag suchen und auf „Inhaber bestätigen“ klicken. Google schickt meist eine Postkarte mit Code oder ruft an.
+3. Fülle alles aus:
+   - Öffnungszeiten (genau wie auf der Website), auch Feiertage und Ruhetage
+   - Kategorie „Restaurant“, dazu z. B. „Deutsches Restaurant“ und „Hotel“
+   - Link zur Website und zur Speisekarte (`https://landgasthaus-albermann.de/abendkarte/`)
+   - Möglichst viele gute Fotos: Gastraum, Terrasse, Gerichte, Außenansicht
+4. Beantworte Bewertungen – auch die guten, ein kurzes „Danke“ reicht.
+
+---
+
+## Schritt 4: Gäste um Google-Bewertungen bitten
+
+Anzahl und Aktualität der Bewertungen beeinflussen stark, wer bei Google Maps oben steht.
+
+- Im Unternehmensprofil gibt es unter „Mehr Rezensionen erhalten“ einen Link bzw. QR-Code.
+- Den QR-Code z. B. auf die Rechnung, einen Tischaufsteller oder die Karte drucken.
+- Zufriedene Stammgäste einfach direkt fragen.
+
+---
+
+## Schritt 5: Öffnungszeiten überall gleich halten
+
+Google vergleicht eure Angaben auf verschiedenen Seiten. Widersprüche kosten Vertrauen und Platzierungen.
+
+Gerade aufgefallen: Auf eurer Kontaktseite steht **Mi–Sa**, auf [dein-nrw.de](https://entdecke.dein-nrw.de/en/dein-nrw/streaming/detail/Gastro/g_100021428/landgasthaus-albermann) steht **Di–Sa** (und „zweite Generation“ statt „dritte“).
+
+Prüfe und korrigiere Name, Adresse, Telefonnummer und Öffnungszeiten auf:
+
+- [ ] Google-Unternehmensprofil
+- [ ] eurer Website (Kontaktseite, Fußzeile)
+- [ ] dein-nrw.de
+- [ ] 11880.com
+- [ ] Tripadvisor
+- [ ] Facebook und Instagram
+
+**Merke:** Wenn sich die Öffnungszeiten ändern, an all diesen Stellen ändern – und im Baustein aus Schritt 2.
+
+---
+
 ## Schritt 6: Google Search Console einrichten
 
 Hier zeigt Google dir, wie es eure Seite sieht: Bei welchen Suchbegriffen ihr erscheint, wie oft man klickt und ob es Probleme gibt.
@@ -156,6 +164,8 @@ Hier zeigt Google dir, wie es eure Seite sieht: Bei welchen Suchbegriffen ihr er
 4. Nach Veröffentlichung der Abendkarte: Oben die Adresse `https://landgasthaus-albermann.de/abendkarte/` eingeben → **Indexierung beantragen**.
 
 Nach ein paar Tagen siehst du unter **Leistung**, bei welchen Suchen ihr auftaucht.
+
+---
 
 ## Schritt 7: Bessere Seitentitel und Beschreibungen
 
@@ -173,6 +183,8 @@ So änderst du es: Seite in WordPress öffnen → unten (oder rechts) im Bereich
 
 Die Texte sind Vorschläge – passt sie gern an, wenn etwas nicht stimmt (z. B. was die Zimmer besonders macht). Die Startseite ist schon gut und kann bleiben.
 
+---
+
 ## Schritt 8: Alte Testseiten entfernen
 
 Google zeigt ein paar Überbleibsel aus der Einrichtung von WordPress an, die nicht zu euch gehören:
@@ -184,6 +196,8 @@ Google zeigt ein paar Überbleibsel aus der Einrichtung von WordPress an, die ni
 
 Vor dem Löschen kurz ansehen, ob die Seite wirklich nirgends gebraucht wird.
 
+---
+
 ## Schritt 9: Website schneller machen
 
 Die Startseite braucht teilweise bis zu 10 Sekunden, bis sie lädt. Das verärgert Gäste auf dem Handy und Google bewertet es schlechter.
@@ -193,6 +207,8 @@ Die Startseite braucht teilweise bis zu 10 Sekunden, bis sie lädt. Das verärge
    - **WP Rocket** – kostenpflichtig (ca. 60 €/Jahr), aber mit den meisten Verbesserungen auf einen Klick.
 2. Unter **Plugins** prüfen, welche Elementor-Erweiterungen (z. B. „Happy Elementor Addons“) wirklich genutzt werden, und ungenutzte deaktivieren. **Vorsicht:** Danach jede Seite einmal ansehen, ob noch alles richtig aussieht. Im Zweifel den Webdesigner fragen.
 3. Vorher ein Backup machen (viele Hoster bieten das im Kundenbereich an).
+
+---
 
 ## Schritt 10: Bilder beschriften
 
@@ -206,11 +222,11 @@ Keines der Bilder auf der Startseite hat einen Beschreibungstext („Alternativt
 
 ## Checkliste zum Abhaken
 
-- [ ] 1. Google-Unternehmensprofil vollständig ausgefüllt
-- [ ] 2. QR-Code für Bewertungen ausgedruckt
-- [ ] 3. Öffnungszeiten überall gleich
-- [ ] 4. Speisekarten-Plugin installiert, Seite „Abendkarte“ veröffentlicht und verlinkt
-- [ ] 5. Restaurant-Daten über WPCode eingebaut und im Rich Results Test geprüft
+- [ ] 1. Speisekarten-Plugin installiert, Seite „Abendkarte“ veröffentlicht und verlinkt
+- [ ] 2. Restaurant-Daten über WPCode eingebaut und im Rich Results Test geprüft
+- [ ] 3. Google-Unternehmensprofil vollständig ausgefüllt
+- [ ] 4. QR-Code für Bewertungen ausgedruckt
+- [ ] 5. Öffnungszeiten überall gleich
 - [ ] 6. Search Console eingerichtet, Sitemap gesendet
 - [ ] 7. Seitentitel und Beschreibungen geändert
 - [ ] 8. Testseiten entfernt
